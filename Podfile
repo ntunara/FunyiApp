@@ -1,9 +1,12 @@
-platform :ios, '8.0'
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
 
-pod 'SVPullToRefresh', '~> 0.4.1'
-pod 'MBProgressHUD', '~> 0.9.2'
-pod 'HexColors', '~> 3.1.0'
-pod 'MMDrawerController', '~> 0.6.0'
-pod 'AFNetworking', '~> 2.0'
+target 'FunyiApp' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
 
+  # Pods for FunyiApp
 
+  pod 'SVPullToRefresh'
+ 
+end

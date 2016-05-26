@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8825CF2A5C3F01B55AD6753C /* libPods-FunyiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049C058926B049ADE1222C71 /* libPods-FunyiApp.a */; };
 		F7F128EB1CF72494006FB89D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F128EA1CF72494006FB89D /* main.m */; };
 		F7F128EE1CF72494006FB89D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F128ED1CF72494006FB89D /* AppDelegate.m */; };
 		F7F128F11CF72494006FB89D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F128F01CF72494006FB89D /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049C058926B049ADE1222C71 /* libPods-FunyiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunyiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E17FC870AA8C26FA8F9F39 /* Pods-FunyiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunyiApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunyiApp/Pods-FunyiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A584236F20132046BE7EE65D /* Pods-FunyiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunyiApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunyiApp/Pods-FunyiApp.release.xcconfig"; sourceTree = "<group>"; };
 		F7F128E61CF72494006FB89D /* FunyiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunyiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F128EA1CF72494006FB89D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7F128EC1CF72494006FB89D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8825CF2A5C3F01B55AD6753C /* libPods-FunyiApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AE1796B0703D8DC29442E3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				049C058926B049ADE1222C71 /* libPods-FunyiApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		743B8625EB2BA092A68B72C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1E17FC870AA8C26FA8F9F39 /* Pods-FunyiApp.debug.xcconfig */,
+				A584236F20132046BE7EE65D /* Pods-FunyiApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F7F128DD1CF72494006FB89D = {
 			isa = PBXGroup;
 			children = (
 				F7F128E81CF72494006FB89D /* FunyiApp */,
 				F7F128E71CF72494006FB89D /* Products */,
+				743B8625EB2BA092A68B72C4 /* Pods */,
+				6AE1796B0703D8DC29442E3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7F128FD1CF72494006FB89D /* Build configuration list for PBXNativeTarget "FunyiApp" */;
 			buildPhases = (
+				87E6BD36DFB1BC08C1A1D05B /* 📦 Check Pods Manifest.lock */,
 				F7F128E21CF72494006FB89D /* Sources */,
 				F7F128E31CF72494006FB89D /* Frameworks */,
 				F7F128E41CF72494006FB89D /* Resources */,
+				68BDD4E53C4EB4BD3473B835 /* 📦 Embed Pods Frameworks */,
+				40097B7AFAB7BD08EC3663B3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +137,7 @@
 				TargetAttributes = {
 					F7F128E51CF72494006FB89D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9799LS3K5C;
 					};
 				};
 			};
@@ -143,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40097B7AFAB7BD08EC3663B3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunyiApp/Pods-FunyiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BDD4E53C4EB4BD3473B835 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunyiApp/Pods-FunyiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87E6BD36DFB1BC08C1A1D05B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F7F128E21CF72494006FB89D /* Sources */ = {
@@ -263,8 +339,10 @@
 		};
 		F7F128FE1CF72494006FB89D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1E17FC870AA8C26FA8F9F39 /* Pods-FunyiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunyiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funyi.FunyiApp;
@@ -274,8 +352,10 @@
 		};
 		F7F128FF1CF72494006FB89D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A584236F20132046BE7EE65D /* Pods-FunyiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunyiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funyi.FunyiApp;
@@ -302,6 +382,7 @@
 				F7F128FF1CF72494006FB89D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
